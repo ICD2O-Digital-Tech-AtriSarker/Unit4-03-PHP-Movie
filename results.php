@@ -19,7 +19,7 @@
         $message = "Please Enter Input!";
       }
       else if ($age <= 0) {
-        $message = "Please Enter Postive Input!";
+        $message = "Please Enter Positive Input!";
       }
       else if (str_contains(strval($age), ".")) {
         $message = "Please Enter Positive Integer!";
