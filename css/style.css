@@ -1,4 +1,16 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2ddc0;
+  margin: 0;
+  padding: 0;
+  color: #a6792b;
+}
+
+h1 {
+  color: #664b00;
+}
+
+.contentImg {
+    width: 100px;
+    height: auto;
+}
