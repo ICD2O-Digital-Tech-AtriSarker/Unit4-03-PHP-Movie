@@ -6,7 +6,6 @@
     {
       // Get user input, years of age
       $age = floatval($_POST['age']);
-
       // When the user’s age allows them to go to an R-rated movie alone
       // When the user’s age allows them to go to a PG-13 movie alone
       // When the user’s age allows them to go to a G or PG movie alone
@@ -16,7 +15,8 @@
       // When nothing is entered, web page should ask them to please input their age.
       $message = "";
       if (is_nan($age)) {
-        $message = "Please Enter Input!";
+        // Redundant, because floatval() automatically parses empty input as 0
+        $message = "Please Enter Positive Input!";
       }
       else if ($age <= 0) {
         $message = "Please Enter Positive Input!";
